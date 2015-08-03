@@ -1,0 +1,83 @@
+	<div id="wrapper">
+	  <div id="header_home">
+    <h1 id="logo_home">franklin's<span>blog</span></h1>
+  </div>
+		<div id="wrappertop"></div>
+
+		<div id="wrappermiddle">
+
+			<h2>Login</h2>
+
+			<div id="username_input">
+
+				<div id="username_inputleft"></div>
+
+				<div id="username_inputmiddle">
+				<form>
+					<input type="text" name="link" id="url" value="E-mail Address" onclick="this.value = ''">
+					
+					<%= image_tag('mailicon.png', :id => 'url_user') %>
+				</form>
+				</div>
+
+				<div id="username_inputright"></div>
+
+			</div>
+
+			<div id="password_input">
+
+				<div id="password_inputleft"></div>
+
+				<div id="password_inputmiddle">
+				<form>
+					<input type="password" name="link" id="url" value="Password" onclick="this.value = ''">
+					<%= image_tag('mailicon.png', :id => 'url_password') %>
+				</form>
+				</div>
+
+				<div id="password_inputright"></div>
+
+			</div>
+
+			<div id="submit">
+				<form>
+				<!--<input type="image" src="./images/submit_hover.png" id="submit1" value="Sign In">-->
+				<%= image_submit_tag('submit_hover.png', :id=>'submit1') %>
+				<!--<input type="image" src="./images/submit.png" id="submit2" value="Sign In">-->
+				<%= image_submit_tag('submit.png', :id=>'submit2') %>
+				</form>
+			</div>
+
+
+			<div id="links_left">
+
+			<a href="#">Forgot your Password?</a>
+
+			</div>
+
+			<div id="links_right"><a href="#">Not a Member Yet?</a></div>
+
+		</div>
+
+		<div id="wrapperbottom"></div>
+		
+		<div id="powered">
+		<!--<p>Powered by <a href="http://www.premiumfreebies.eu">Premiumfreebies Control Panel</a></p>-->
+		</div>
+	</div>
+	<script>
+
+
+	$(document).ready(function(){
+ 
+	$("#submit1").hover(
+	function() {
+	$(this).animate({"opacity": "0"}, "slow");
+	},
+	function() {
+	$(this).animate({"opacity": "1"}, "slow");
+	});
+ 	});
+
+
+</script>
